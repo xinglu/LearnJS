@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>1_3_3</title>
+<script src="../jquery-1.7.2.js" type="text/javascript">
+</script>
+<style type="text/css">
+#menu {width: 300px}
+.has_children{background: #555;color: #fff;cursor:pointer;}
+.highlight{color: #fff;background: green;}
+div{padding:0; margin: 10px 0;}
+diva{background: #888;display: none;float: left;width: 300px;}
+</style>
+<script type="text/javascript">
+$("has_children").click(function(){
+	$(this).addClass("highlight").children("a").show().end()
+	.siblings().removeClass("highlight").children("a").hide();
+})
+</script>
+</head>
+<body>
+<div id="menu">
+<div class="has_children">
+<span>1 know</span>
+<a href="#">1.1asdfadfasdfasfa</a>
+<a href="#">1.1asdfadfasdfasfa</a>
+<a href="#">1.1asdfadfasdfasfa</a>
+<a href="#">1.1asdfadfasdfasfa</a>
+<a href="#">1.1asdfadfasdfasfa</a>
+<a href="#">1.1asdfadfasdfasfa</a>
+<a href="#">1.1asdfadfasdfasfa</a>
+</div>
+<div class="has_children">
+	<span>2 selector</span>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+</div>
+<div class="has_children">
+	<span>3 DOM Operation</span>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+<a href="#">2.1asdfadfasdfasfa</a>
+</div>
+</div>
+</body></html>
